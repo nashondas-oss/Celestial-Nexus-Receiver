@@ -5,7 +5,7 @@ Routes error codes to appropriate Houses based on their metadata.
 
 from typing import Optional, List, Dict, Any
 from dataclasses import dataclass, field
-from datetime import datetime
+from datetime import datetime, timezone
 
 from .models.error_codes import ErrorCode, get_error_code, ERROR_001_DISSOCIATION
 
@@ -96,7 +96,7 @@ class RoutingEngine:
                 house_name=error.house_name,
                 frequency=error.frequency,
                 confidence_level=error.confidence_level,
-                routed_at=datetime.utcnow(),
+                routed_at=datetime.now(timezone.utc),
                 blocked_by=blocking_error,
                 metadata=metadata or {}
             )
@@ -109,7 +109,7 @@ class RoutingEngine:
             house_name=error.house_name,
             frequency=error.frequency,
             confidence_level=error.confidence_level,
-            routed_at=datetime.utcnow(),
+            routed_at=datetime.now(timezone.utc),
             metadata=metadata or {}
         )
         

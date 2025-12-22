@@ -4,7 +4,7 @@ Tests include override logic, edge cases, and blocking behavior.
 """
 
 import pytest
-from datetime import datetime
+from datetime import datetime, timezone
 
 from celestial_nexus.routing_engine import RoutingEngine, RoutingResult
 from celestial_nexus.models.error_codes import ERROR_001_DISSOCIATION, get_error_code
@@ -49,9 +49,9 @@ class TestError001Basic:
     
     def test_error_001_has_timestamp(self, engine):
         """Test that routing result includes timestamp."""
-        before = datetime.utcnow()
+        before = datetime.now(timezone.utc)
         result = engine.route_error("ERROR_001")
-        after = datetime.utcnow()
+        after = datetime.now(timezone.utc)
         
         assert before <= result.routed_at <= after
 
