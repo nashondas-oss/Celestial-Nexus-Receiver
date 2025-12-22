@@ -1,0 +1,19 @@
+{
+  "accessCodes": [
+    {
+      "id": "placeholder-001",
+      "value": "TBD",
+      "hint": "This is a pre-launch placeholder. To be replaced with a valid access code."
+    },
+    {
+      "id": "placeholder-002",
+      "value": "TBD",
+      "hint": "This is a pre-launch placeholder. To be replaced with a valid access code."
+    },
+    {
+      "id": "placeholder-003",
+      "value": "TBD",
+      "hint": "This is a pre-launch placeholder. To be replaced with a valid access code."
+    }
+  ]
+}
