@@ -1,1 +1,1 @@
-Push the above content as the updated README.md file in the repository nashondas-oss/celestial-nexus-receiver on its main branch. Provide commit message: 'Updated README with immersive planetary resonance vision, architecture design, routing engine usage, API examples, and roadmap.'
+[Courtyard of Marrakech](#) - Learn about the Courtyard of Marrakech and its role in the Seven Angelic Houses framework.
