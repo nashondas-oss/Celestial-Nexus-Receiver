@@ -78,11 +78,14 @@ history = AssessmentHistory(user_id="cosmic_001")
 history.add_assessment(result)
 ```
 
-#### 3. **Harmonization Engine**
-Synchronizes data across Houses with configurable thresholds:
+#### 3. **Harmonization Engine** *(Planned)*
+> **Note**: The Harmonization Engine is currently in development. See [`examples/advanced_integration.py`](examples/advanced_integration.py) for the planned API design.
+
+The Harmonizer will synchronize data across Houses with configurable thresholds:
 
 ```python
-from celestial_nexus_receiver import Harmonizer
+# Planned API (not yet implemented)
+from celestial_nexus import Harmonizer
 
 harmonizer = Harmonizer()
 harmonizer.load_config({
@@ -96,11 +99,14 @@ harmonizer.load_config({
 result = harmonizer.harmonize()
 ```
 
-#### 4. **Multi-House Sequence Processing**
-Processes temporal sequences across multiple Houses:
+#### 4. **Multi-House Sequence Processing** *(Planned)*
+> **Note**: Multi-House Sequence processing is currently in development.
+
+The sequencer will process temporal sequences across multiple Houses:
 
 ```python
-from celestial_nexus_receiver import MultiHouseSequence
+# Planned API (not yet implemented)
+from celestial_nexus import MultiHouseSequence
 
 processor = MultiHouseSequence()
 sequence_data = [
@@ -118,15 +124,19 @@ processed = processor.process(sequence_data)
 - Python 3.8 or higher
 - pip or poetry package manager
 
-### Using pip
+### Using pip *(Package not yet published)*
+
+> **Note**: The package is currently in development (v0.1.0) and not yet available on PyPI.
 
 ```bash
+# Coming soon
 pip install celestial-nexus-receiver
 ```
 
-### Using poetry
+### Using poetry *(Package not yet published)*
 
 ```bash
+# Coming soon
 poetry add celestial-nexus-receiver
 ```
 
@@ -162,12 +172,15 @@ assessment = AssessmentResult(
 print(f"Performance: {assessment.percentage():.2f}%")
 ```
 
-### Advanced Integration
+### Advanced Integration *(Coming Soon)*
 
-For complex multi-House harmonization scenarios, see the complete example in [`examples/advanced_integration.py`](examples/advanced_integration.py):
+> **Note**: Advanced integration features like the Harmonizer and MultiHouseSequence are currently in development. The example in [`examples/advanced_integration.py`](examples/advanced_integration.py) demonstrates the planned API design.
+
+For complex multi-House harmonization scenarios, the planned API will look like:
 
 ```python
-from celestial_nexus_receiver import Harmonizer, MultiHouseSequence
+# Planned API (not yet implemented)
+from celestial_nexus import Harmonizer, MultiHouseSequence
 
 # Configure harmonization across multiple Houses
 harmonizer = Harmonizer()
@@ -256,15 +269,15 @@ routing:
   - `add_assessment(assessment: AssessmentResult)`: Add new result
   - `get_latest_assessment()`: Retrieve most recent assessment
 
-#### `Harmonizer`
+#### `Harmonizer` *(Planned)*
 - **Purpose**: Synchronize data across Houses
-- **Methods**:
+- **Planned Methods**:
   - `load_config(config: dict)`: Configure House connections
   - `harmonize()`: Execute harmonization process
 
-#### `MultiHouseSequence`
+#### `MultiHouseSequence` *(Planned)*
 - **Purpose**: Process temporal sequences across Houses
-- **Methods**:
+- **Planned Methods**:
   - `process(sequence_data: list)`: Process sequential data
 
 ## 🛤️ Routing Engine
@@ -276,11 +289,11 @@ The routing engine distributes requests across Houses based on:
 3. **Threshold Validation**: Ensuring harmonization quality
 4. **Temporal Sequencing**: Maintaining chronological integrity
 
-### Routing Strategies
+### Routing Strategies *(Planned)*
 
 ```python
-# Example: Configure routing strategy
-from celestial_nexus_receiver import Router
+# Planned API (not yet implemented)
+from celestial_nexus import Router
 
 router = Router(strategy="weighted")
 router.add_route("House A", weight=0.6)
@@ -291,23 +304,32 @@ result = router.route(request_data)
 
 ## 🗺️ Roadmap
 
-### Q1 2025
-- [x] Core harmonization engine
+### Completed
+- [x] Core package structure
 - [x] User state management
 - [x] Assessment tracking system
+- [x] Project documentation
+- [x] Basic testing infrastructure
+
+### Q1 2025
+- [ ] Harmonization engine implementation
+- [ ] Multi-House sequence processor
 - [ ] Advanced routing algorithms
 - [ ] GraphQL API layer
+- [ ] Publish to PyPI
 
 ### Q2 2025
 - [ ] Real-time harmonization streams
 - [ ] Multi-tenant House isolation
 - [ ] Performance monitoring dashboard
 - [ ] Integration with cloud providers
+- [ ] Comprehensive test coverage
 
 ### Q3 2025
 - [ ] Machine learning-based prediction
 - [ ] Automated House optimization
 - [ ] Cross-nexus federation protocol
+- [ ] Advanced analytics dashboard
 
 ### 2026 & Beyond
 - [ ] Quantum state integration
