@@ -378,12 +378,30 @@ pytest tests/test_user_state.py
 
 ## 📜 License
 
-This project is dual-licensed:
+This project is dual-licensed to serve different use cases and communities:
 
-- **Public Domain**: [CC0 1.0 Universal](LICENSE) for maximum freedom
-- **Sacred Commons**: [Sacred Commons License](LICENSE.md) for relational integrity
+### Option 1: Public Domain (CC0 1.0 Universal)
+See [LICENSE](LICENSE) for the full text.
 
-Choose the license that resonates with your intended use. We encourage use that honors the relational principles outlined in the Sacred Commons License.
+**Best for**: Maximum freedom, commercial use, no attribution required.
+
+The CC0 1.0 Universal license places this work in the public domain, allowing you to:
+- Use, modify, and distribute the work for any purpose
+- Commercial or non-commercial use without restrictions
+- No attribution required (though appreciated)
+
+### Option 2: Sacred Commons License
+See [LICENSE.md](LICENSE.md) for the full text.
+
+**Best for**: Community-oriented projects, ethical use, relational integrity.
+
+The Sacred Commons License emphasizes:
+- Respecting the interdependence of all collaborators
+- Acknowledging collective contributions
+- Avoiding misuse or exploitation
+- Maintaining relational principles in derivatives
+
+**Choosing a License**: You may choose either license based on your intended use. Both are valid simultaneously. If you wish to honor the relational principles and community values of this project, we encourage you to adopt the Sacred Commons License framework.
 
 ## 🙏 Acknowledgments
 
